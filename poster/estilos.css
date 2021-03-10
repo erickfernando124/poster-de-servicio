@@ -1,0 +1,183 @@
+*{
+    border:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:#f4d35e;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+}
+
+.contenedor {
+    width:100%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+.contenedor .header{
+    width:100%;
+    background:#1d3557;
+    border-bottom:10px solid #2ec4b6;
+    padding-top:10px;
+}
+
+.contenedor .header .logo img{
+    width:150px;
+}
+
+.contenedor .header .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado h1{
+    color:#fff;
+    font-size:20px;
+    margin:15px;
+    text-align: center;
+}
+
+.titulo {
+    text-align:center;
+    margin:10px;
+    color:#1d3557;
+    font-size:18px;
+}
+section .main{
+    width:100%;
+    max-width:500px;
+}
+
+.main {
+    width:50%;
+    float:left;
+    height:700px;
+    background:#fff;
+}
+
+.borde-derecho {
+    border-right:2px solid #2ec4b6;
+}
+.main .main-contenedor .imagen{
+    width:100%;
+}
+
+.main .main-contenedor .imagen img {
+    width:100%;
+    max-height:500px;
+    padding:20px;
+}
+
+
+.main .secciones ul{
+    list-style:square;
+    list-style:url('img/flecha-correcta.png');
+    line-height:30px;
+}
+.main .secciones ul li {
+    margin:20px;
+}
+
+.main .secciones ul li a{
+    color:#1d3557;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.main .secciones ul li a:hover{
+    text-decoration:underline;
+    text-decoration-color:#2ec4b6;
+}
+
+.main2 {
+    float:left;
+    width:50%;
+}
+
+footer{
+    clear:both;
+    width:100%;
+}
+
+footer .contacto {
+    background:#1d3557;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+}
+
+footer .contacto ul{
+    list-style:none;
+}
+
+footer .contacto ul li {
+    margin:20px;
+    display:inline-block;
+}
+
+footer .contacto ul li a {
+    text-decoration:none;
+    color:#fff;
+}
+
+.blanco {
+    border-right:1px solid #ccc;
+    padding-right:15px;
+}
+
+.numero1 {
+    padding-right:15px;
+    border-right:1px solid #ccc;
+}
+
+.numero2{
+    padding-right:15px;
+    border-right:1px solid #ccc;
+}
+
+.numero1:hover{
+    text-decoration:underline;
+    text-decoration-color:#fff;
+}
+
+.numero2:hover {
+    text-decoration:underline;
+    text-decoration-color:#fff;
+}
+
+.pagina:hover{
+    text-decoration:underline;
+    text-decoration-color:#fff;
+}
+
+@media screen and (max-width:700px){
+
+    .borde-derecho {
+        border:0px;
+    }
+    .main {
+        width:100%;
+        border-bottom:2px solid #2ec4b6;
+        }
+}
+
+@media screen and (max-width:875px) {
+
+    .contacto ul li {
+        display:block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .encabezado h1 {
+        font-size:17px;
+    }
+    .contenedor .header .logo img{
+        width:100px;
+    }
+    .main {
+        height:650px;
+    }
+}
